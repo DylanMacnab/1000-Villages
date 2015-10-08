@@ -6,3 +6,35 @@
 
 // Standard Buttons
 // ------------------------
+
+// .btn
+
+%btn {
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: .1rem;
+  transition: $transition-basic;
+  // remove default hover underline on anchor tags
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+//
+
+.btn-sm {
+  @extend %btn;
+  padding: 9px 20px;
+}
+
+
+.btn-alt {
+  border: 1px solid $accent-primary;
+  border-radius: 5px;
+  color: $gray-lighter;
+  &:hover {
+    background: $accent-primary;
+    color: white;
+  }
+}

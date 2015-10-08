@@ -1,0 +1,50 @@
+// **************************************************
+// Name: _topbar.scss
+// Description: main navigation bar on page
+// **************************************************
+
+
+// topbar
+// --------------------------------------------------
+
+.topbar {
+  width: 100%;
+  height: 65px;
+  background: rgba($gray-dark, .92);
+  box-shadow: 0 4px rgba($gray, .4);
+}
+
+
+
+// topbar elements
+// -----------------------------
+
+// container for topbar logo
+.topbar__brand {
+  float: left;
+  width: 180px;
+  height: 63px;
+  background: url('../img/brand.svg') no-repeat left center;
+}
+
+// Container for topbar navigation
+.topbar__nav {
+  float: right;
+  padding-top: 22px;
+  // basic topbar nav links
+}
+
+// Style for topbar links
+.topbar__link {
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-right: 30px;
+  // increase click target size
+  padding: 20px 5px;
+  color: $gray-light;
+
+  &:hover {
+    color: $gray-lighter;
+    text-decoration: none;
+  }
+}

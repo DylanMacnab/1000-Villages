@@ -1,0 +1,21 @@
+// **************************************************
+// Name: _hero.scss
+// Description: hero image in the header
+// **************************************************
+
+
+// hero
+// --------------------------------------------------
+
+.hero {
+  height: 700px;
+  height: 98vh;
+  max-width: 2000px;
+  margin-right: auto;
+  margin-left: auto;
+  background:
+    url('../img/hero-bg.jpg');
+  background-position: bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
