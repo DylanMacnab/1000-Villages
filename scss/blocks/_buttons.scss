@@ -13,6 +13,7 @@
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: .1rem;
+  border-radius: 7px;
   transition: $transition-basic;
   // remove default hover underline on anchor tags
   &:hover {
@@ -31,7 +32,6 @@
 
 .btn-alt {
   border: 1px solid $accent-primary;
-  border-radius: 7px;
   color: $gray-lighter;
   &:hover {
     background: $accent-primary;

@@ -1235,6 +1235,7 @@ textarea {
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: .1rem;
+  border-radius: 7px;
   -webkit-transition: 0.3s ease;
           transition: 0.3s ease; }
   .btn-sm:hover {
@@ -1245,7 +1246,6 @@ textarea {
 
 .btn-alt {
   border: 1px solid #E0216A;
-  border-radius: 7px;
   color: #eeeeee; }
   .btn-alt:hover {
     background: #E0216A;
