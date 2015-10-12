@@ -51,21 +51,21 @@
 
 .quote-marks:before {
   content: '“';
-  font-size: 130px;
-  font-family: georgia;
+  font-size: 110px;
+  font-family: 'bitter';
   position: absolute;
-  left: 60px;
+  left: 55px;
   top: 50px;
   color: $brand-primary;
   line-height: 1;
 }
 .quote-marks:after {
   content: '”';
-  font-family: georgia;
-  font-size: 130px;
+  font-family: 'bitter';
+  font-size: 110px;
   line-height: 1;
   position: absolute;
-  right: 65px;
+  right: 60px;
   bottom: 40px;
   color: $brand-primary;
 }
