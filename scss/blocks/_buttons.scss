@@ -7,26 +7,55 @@
 // Standard Buttons
 // ------------------------
 
-// .btn
+// basic button form
 
 %btn {
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: .1rem;
-  border-radius: 7px;
+  border-radius: 5px;
   transition: $transition-basic;
   // remove default hover underline on anchor tags
   &:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
 
-//
+// button size
+// --------------------------
+
+.btn-lg {
+  @extend %btn;
+  padding: 18px 45px;
+}
 
 .btn-sm {
   @extend %btn;
   padding: 9px 20px;
+}
+
+
+// button look
+// --------------------------
+
+.btn-primary {
+  background: $brand-primary;
+  color: $gray-lighter;
+  &:hover {
+    background: $brand-light;
+    color: white;
+  }
+}
+
+.btn-primary-accent {
+  background: $accent-primary;
+  color: $gray-lighter;
+  &:hover {
+    background: $accent-light;
+    color: white;
+  }
 }
 
 

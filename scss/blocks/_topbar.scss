@@ -10,8 +10,8 @@
 .topbar {
   width: 100%;
   height: 65px;
-  background: rgba($gray-dark, .92);
-  box-shadow: 0 4px rgba($gray, .4);
+  background: rgba($gray-dark, 1);
+  box-shadow: $shadow-primary;
 }
 
 

@@ -25,12 +25,12 @@ $gray-lighter:           lighten($gray-base, 93.5%);
 // -------------------------
 
 $brand-primary:           #0287D0;
-$brand-dark:              darken($brand-primary, 13.5%);
-$brand-light:             lighten($brand-primary, 13.5%);
+$brand-dark:              darken($brand-primary, 8%);
+$brand-light:             lighten($brand-primary, 5%);
 
 $accent-primary:          #E0216A;
-$accent-dark:             darken($accent-primary, 13.5%);
-$accent-light:            lighten($accent-primary, 13.5%);
+$accent-dark:             darken($accent-primary, 8%);
+$accent-light:            lighten($accent-primary, 5%);
 
 
 // Basic Global Colors
@@ -60,8 +60,8 @@ $headings-color:        inherit !default;
 // -------------------------
 
 // Two Basic Font Choices
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:  "Raleway", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Bitter", Georgia, Times, serif;
 
 // Global Type Font Style
 $font-family-base:        $font-family-sans-serif;
@@ -97,7 +97,7 @@ $font-size-h6:            ceil(($font-size-base * 0.85));
 $line-height-base:        1.5;
 
 // heading line height
-$line-height-heading:     1.1;
+$line-height-heading:     1.2;
 
 
 
@@ -109,3 +109,10 @@ $line-height-heading:     1.1;
 // ------------------------
 
 $transition-basic:      .3s ease;
+
+
+// **************************************************
+// Shadow
+// **************************************************
+
+$shadow-primary:      0 0 5px rgba(black, .5);

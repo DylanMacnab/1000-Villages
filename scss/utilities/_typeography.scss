@@ -16,6 +16,15 @@
 .text-nowrap         { white-space: nowrap; }
 
 
+
+.text-md-center {
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+
 // Lists
 // --------------------------------------------------
 
@@ -35,4 +44,16 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+
+// Type Size
+// --------------------------------------------------
+
+.type-lead {
+  font-size: 3.75rem;
+}
+
+.type-lg {
+  font-size: 1.25rem;
 }
