@@ -26,7 +26,36 @@
 
 .plan__slider ul li {
   float: left;
+  position: relative;
 }
+
+// Style Individual Slides
+// -----------------------
+
+.plan__slider ul li:nth-child(1) {
+  background-color: red;
+  &:before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: purple;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+  }
+}
+
+.plan__slider ul li:nth-child(2) {
+  background-color: purple;
+}
+
+.plan__slider ul li:nth-child(3) {
+  background-color: orange;
+}
+
+
 
 
 // Unslider dots

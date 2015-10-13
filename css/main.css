@@ -1455,7 +1455,29 @@ textarea {
   height: 500px; }
 
 .plan__slider ul li {
-  float: left; }
+  float: left;
+  position: relative; }
+
+.plan__slider ul li:nth-child(1) {
+  background-color: red; }
+  .plan__slider ul li:nth-child(1):before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: purple;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    z-index: 100; }
+
+.plan__slider ul li:nth-child(2) {
+  background-color: purple; }
+
+.plan__slider ul li:nth-child(3) {
+  background-color: orange; }
 
 .dots {
   position: absolute;
