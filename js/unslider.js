@@ -58,8 +58,8 @@
 			//  Current indeed
 			_.i = 0;
 
-			//  Set the main element
-			el.css({width: _.max[0], height: li.first().outerHeight(), overflow: 'hidden'});
+			//  Set the main element																			// Dylan Removed Overflow hidden for psuedo element
+			el.css({width: _.max[0], height: li.first().outerHeight() }); // , overflow: 'hidden'
 
 			//  Set the relative widths
 			ul.css({position: 'relative', left: 0, width: (len * 100) + '%'});

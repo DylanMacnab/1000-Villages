@@ -1441,7 +1441,7 @@ textarea {
 
 .plan__slider {
   position: relative;
-  overflow: auto;
+  overflow: visible;
   width: 100%;
   text-align: center;
   background: green; }
@@ -1462,16 +1462,17 @@ textarea {
   background-color: red; }
   .plan__slider ul li:nth-child(1):before {
     content: "";
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     background: purple;
     position: absolute;
-    top: 25px;
+    top: -38px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    z-index: 100; }
+    border-radius: 50%;
+    border: 3px solid white; }
 
 .plan__slider ul li:nth-child(2) {
   background-color: purple; }
