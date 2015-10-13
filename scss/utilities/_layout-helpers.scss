@@ -1,5 +1,5 @@
 // **************************************************
-// Name: _section-layout.scss
+// Name: _layout-helpers.scss
 // Description: introduction sections
 // **************************************************
 
@@ -7,3 +7,18 @@
 
 // Create Classes for padding in sections
 // Might be able to replace inner content container?
+
+
+// Section Spacing, vertical padding
+// --------------------------------------------------
+
+// outer spacing for seciton
+.section-space {
+  padding: 75px 0;
+}
+
+
+// inner spacing for section
+.inner-tpad {
+  padding-top: 50px;
+}

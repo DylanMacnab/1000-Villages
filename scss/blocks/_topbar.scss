@@ -22,9 +22,13 @@
 // container for topbar logo
 .topbar__brand {
   float: left;
-  width: 180px;
+  width: 120px;
   height: 63px;
   background: url('../img/brand.svg') no-repeat left center;
+  background-size: contain;
+  @include mq(md) {
+    width: 170px;
+  }
 }
 
 // Container for topbar navigation
@@ -36,6 +40,7 @@
 
 // Style for topbar links
 .topbar__link {
+  display: none;
   text-transform: uppercase;
   letter-spacing: .1rem;
   margin-right: 30px;
@@ -46,5 +51,9 @@
   &:hover {
     color: $gray-lighter;
     text-decoration: none;
+  }
+
+  @include mq(md) {
+    display: inline;
   }
 }

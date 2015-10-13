@@ -1,9 +1,67 @@
 // **************************************************
-// Name: _section-layout.scss
-// Description: introduction sections
+// Name: _sections.scss
+// Description: section specific styles
 // **************************************************
 
 
+// Section Specific Styles
+// --------------------------------------------------
 
-// Create Classes for padding in sections
-// Might be able to replace inner content container?
+
+// Mission Section
+// --------------------------------------------------
+
+.mission {
+  color: white;
+  background: $brand-primary;
+  position: relative;
+}
+.mission:after {
+  content: " ";
+  position: absolute;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  top: -35px;
+  right: 0;
+  left: 0;
+  display: block;
+  margin: 0 auto;
+  background:
+    url('../img/brand-icon.svg') no-repeat center,
+    $brand-primary;
+}
+
+// mission facts
+// ----------------------------
+
+.mission__fact {
+  font-size: 4rem;
+  color: $brand-darker;
+  font-family: 'bitter';
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 10px;
+  @include mq(md) {
+    font-size: 7rem;
+  }
+  // target span of number label
+  span {
+    font-size: 1.3rem;
+    @include mq(md) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.mission__fact__description {
+  padding-left: 100px;
+}
+
+
+// Plan Section
+// --------------------------------------------------
+
+.plan {
+  background: $gray-lighter;
+}
