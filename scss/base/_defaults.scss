@@ -40,7 +40,11 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   // remove default margin
-  margin: 0
+  margin: 0;
+
+  @include mq(md) {
+    font-size: 16px;
+  }
 }
 
 

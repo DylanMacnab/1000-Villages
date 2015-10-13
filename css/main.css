@@ -370,6 +370,9 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   margin: 0; }
+  @media (min-width: 992px) {
+    body {
+      font-size: 16px; } }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -1149,6 +1152,15 @@ textarea {
 .inner-tpad {
   padding-top: 50px; }
 
+.hv-center {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .container--content {
   width: 95%;
   max-width: 1100px;
@@ -1164,6 +1176,13 @@ textarea {
 .container--sm {
   width: 95%;
   max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container--slider {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1426,7 +1445,7 @@ textarea {
   padding-top: 10px; }
   @media (min-width: 992px) {
     .mission__fact {
-      font-size: 7rem; } }
+      font-size: 6rem; } }
   .mission__fact span {
     font-size: 1.3rem; }
     @media (min-width: 992px) {
@@ -1439,68 +1458,150 @@ textarea {
 .plan {
   background: #eeeeee; }
 
-.plan__slider {
-  position: relative;
-  overflow: visible;
+.slider {
   width: 100%;
-  text-align: center;
-  background: green; }
+  margin: 0 auto;
+  position: relative;
+  height: 100%; }
 
-.plan__slider ul {
-  padding: 0;
-  margin: 0; }
+.slide {
+  min-height: 400px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center; }
+  @media (min-width: 992px) {
+    .slide {
+      min-height: 600px; } }
 
-.plan__slider li {
-  list-style: none;
-  height: 500px; }
-
-.plan__slider ul li {
-  float: left;
-  position: relative; }
-
-.plan__slider ul li:nth-child(1) {
-  background-color: red; }
-  .plan__slider ul li:nth-child(1):before {
-    content: "";
-    height: 75px;
-    width: 75px;
-    background: purple;
-    position: absolute;
-    top: -38px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    border-radius: 50%;
-    border: 3px solid white; }
-
-.plan__slider ul li:nth-child(2) {
-  background-color: purple; }
-
-.plan__slider ul li:nth-child(3) {
-  background-color: orange; }
-
-.dots {
+.next, .prev {
+  padding: 30px 20px;
+  display: block;
   position: absolute;
-  left: calc(50% - 65px);
-  bottom: 20px; }
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(1, 53, 82, 0.3);
+  color: white;
+  border: none;
+  z-index: 100;
+  -webkit-transition: .3s;
+          transition: .3s; }
+  .next:hover, .prev:hover {
+    background: rgba(1, 53, 82, 0.5); }
 
-.dots li {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-  text-indent: -999em;
-  border: 2px solid white;
+.prev {
+  left: 0; }
+
+.next {
+  right: 0; }
+
+.slide-energy {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-energy.jpg") center center;
+  background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-energy.jpg") center center;
+  background-size: cover; }
+
+.slide-energy:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background: url("../img/energy-icon.svg"), #0287D0;
   border-radius: 50%;
-  cursor: pointer;
-  opacity: .4;
-  -webkit-transition: background .5s, opacity .5s;
-          transition: background .5s, opacity .5s; }
+  border: 3px solid white; }
 
-.dots li.active {
-  background: #fff;
-  opacity: 1; }
+.slide-water {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-water.jpg") center center;
+  background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-water.jpg") center center;
+  background-size: cover; }
+
+.slide-water:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background: url("../img/water-icon.svg"), #0287D0;
+  border-radius: 50%;
+  border: 3px solid white; }
+
+.slide-health {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-healthcare.jpg") center center;
+  background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-healthcare.jpg") center center;
+  background-size: cover; }
+
+.slide-health:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background: url("../img/healthcare-icon.svg") right center, #0287D0;
+  border-radius: 50%;
+  border: 3px solid white; }
+
+.slide-technology {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-technology.jpg") center;
+  background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-technology.jpg") center;
+  background-size: cover; }
+
+.slide-technology:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background: url("../img/technology-icon.svg") right center, #0287D0;
+  border-radius: 50%;
+  border: 3px solid white; }
+
+.slide-education {
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-education.jpg") center;
+  background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-education.jpg") center;
+  background-size: cover; }
+
+.slide-education:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background: url("../img/education-icon.svg"), #0287D0;
+  border-radius: 50%;
+  border: 3px solid white; }
 
 .btn-lg, .btn-sm {
   text-transform: uppercase;

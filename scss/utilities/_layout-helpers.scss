@@ -22,3 +22,14 @@
 .inner-tpad {
   padding-top: 50px;
 }
+
+
+
+// Horizontal and Vertical Center
+.hv-center {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

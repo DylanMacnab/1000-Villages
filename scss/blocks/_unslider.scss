@@ -1,89 +1,199 @@
-// **************************************************
-// Name: slider.scss
-// Description: style for unslider
-// **************************************************
 
-// Unslider Styles
-// --------------------------------------
+// Custom Slider made by ME
 
-.plan__slider {
+// Slider Container
+.slider {
+  width: 100%;
+  margin: 0 auto;
   position: relative;
-  overflow: visible;
-  width:100%;
-  text-align:center;
-  background: green;
+  height: 100%;
 }
 
-.plan__slider ul {
-  padding: 0;
-  margin: 0;
-}
-
-.plan__slider li {
-  list-style: none;
-  height: 500px;
-}
-
-.plan__slider ul li {
-  float: left;
-  position: relative;
-}
-
-// Style Individual Slides
-// -----------------------
-
-.plan__slider ul li:nth-child(1) {
-  background-color: red;
-  &:before {
-    content: "";
-    height: 75px;
-    width: 75px;
-    background: purple;
-    position: absolute;
-    top: -38px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-radius: 50%;
-    border: 3px solid white;
+// Slide Containers
+.slide {
+  min-height: 400px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  @include mq(md) {
+    min-height: 600px;
   }
 }
 
-.plan__slider ul li:nth-child(2) {
-  background-color: purple;
+// Slider Butons
+.next, .prev {
+  padding: 30px 20px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba($brand-darker, .3);
+  color: white;
+  border: none;
+  z-index: 100;
+  transition: .3s;
+  &:hover {
+    background: rgba($brand-darker, .5);
+  }
+}
+.prev { left: 0;}
+.next { right: 0;}
+
+
+
+
+// Slide Specific Styles
+// ----------------------------------------------
+
+// Slide Energy
+// ---------------------
+.slide-energy {
+  height: 100%;
+  width: 100%;
+  background:
+
+  linear-gradient(
+    rgba($brand-primary, 1),
+    rgba($brand-primary, 0.3)
+  ),
+    url('../img/slide-energy.jpg') center center;
+  background-size: cover;
 }
 
-.plan__slider ul li:nth-child(3) {
-  background-color: orange;
+.slide-energy:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background:
+    url('../img/energy-icon.svg'),
+    $brand-primary;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+// Slide Water
+// ---------------------
+.slide-water {
+  height: 100%;
+  width: 100%;
+  background:
+
+  linear-gradient(
+    rgba($brand-primary, 1),
+    rgba($brand-primary, 0.3)
+  ),
+    url('../img/slide-water.jpg') center center;
+  background-size: cover;
+}
+
+.slide-water:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background:
+    url('../img/water-icon.svg'),
+    $brand-primary;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+// Slide Healthcare
+// ---------------------
+.slide-health {
+  height: 100%;
+  width: 100%;
+  background:
+
+  linear-gradient(
+    rgba($brand-primary, 1),
+    rgba($brand-primary, 0.3)
+  ),
+    url('../img/slide-healthcare.jpg') center center;
+  background-size: cover;
+}
+
+.slide-health:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background:
+    url('../img/healthcare-icon.svg') right center,
+    $brand-primary;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+// Slide Technology
+// ---------------------
+.slide-technology {
+  height: 100%;
+  width: 100%;
+  background:
+
+  linear-gradient(
+    rgba($brand-primary, 1),
+    rgba($brand-primary, 0.3)
+  ),
+    url('../img/slide-technology.jpg') center;
+  background-size: cover;
+}
+
+.slide-technology:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background:
+    url('../img/technology-icon.svg') right center,
+    $brand-primary;
+  border-radius: 50%;
+  border: 3px solid white;
 }
 
 
+// Slide Education
+// ---------------------
+.slide-education {
+  height: 100%;
+  width: 100%;
+  background:
 
-
-// Unslider dots
-// -----------------------------------------
-
-.dots {
-    position: absolute;
-    left: calc(50% - 65px);
-    bottom: 20px;
+  linear-gradient(
+    rgba($brand-primary, 1),
+    rgba($brand-primary, 0.3)
+  ),
+    url('../img/slide-education.jpg') center;
+  background-size: cover;
 }
-.dots li {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 0 5px;
 
-    text-indent: -999em;
-
-    border: 2px solid white;
-    border-radius: 50%;
-
-    cursor: pointer;
-    opacity: .4;
-
-    transition: background .5s, opacity .5s;
-}
-.dots li.active {
-    background: #fff;
-    opacity: 1;
+.slide-education:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  transform: translateX(-50%);
+  height: 75px;
+  width: 75px;
+  background:
+    url('../img/education-icon.svg'),
+    $brand-primary;
+  border-radius: 50%;
+  border: 3px solid white;
 }
