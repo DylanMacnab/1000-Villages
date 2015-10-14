@@ -14,9 +14,9 @@
 // -------------------------
 
 $gray-base:              #000;
-$gray-darker:            lighten($gray-base, 13.5%);
+$gray-darker:            lighten($gray-base, 10%);
 $gray-dark:              lighten($gray-base, 20%);
-$gray:                   lighten($gray-base, 33.5%);
+$gray:                   lighten($gray-base, 40%);
 $gray-light:             lighten($gray-base, 60%);
 $gray-lighter:           lighten($gray-base, 93.5%);
 
@@ -41,7 +41,7 @@ $accent-light:            lighten($accent-primary, 5%);
 $body-bg:               #fff;
 
 // Global text color on <body>
-$body-color:            $gray-dark;
+$body-color:            $gray;
 
 // Global textual link color and hover
 $link-color:            $brand-primary;
@@ -85,7 +85,7 @@ $font-weight-bold          : 700;
 $font-size-base:          14px !default;
 $font-size-h1:            floor(($font-size-base * 3));
 $font-size-h2:            floor(($font-size-base * 2.5));
-$font-size-h3:            ceil(($font-size-base * 1.5));
+$font-size-h3:            ceil(($font-size-base * 1.6));
 $font-size-h4:            ceil(($font-size-base * 1.25));
 $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85));

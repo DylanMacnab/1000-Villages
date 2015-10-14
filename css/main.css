@@ -365,7 +365,7 @@ body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #333333;
+  color: #666666;
   background-color: #fff;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -390,7 +390,7 @@ h2, .h2 {
   font-size: 35px; }
 
 h3, .h3 {
-  font-size: 21px; }
+  font-size: 23px; }
 
 h4, .h4 {
   font-size: 18px; }
@@ -1227,6 +1227,12 @@ textarea {
     .type-lg {
       font-size: 1.3rem; } }
 
+.type-bpad {
+  padding-bottom: 20px; }
+
+.type-uppercase {
+  text-transform: uppercase; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -1460,9 +1466,27 @@ textarea {
 .mission__fact__description {
   padding-left: 55px; }
 
-.plan {
-  background: #eeeeee;
-  color: #555555; }
+.card-team {
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 5px; }
+
+.card-team {
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  max-height: 600px;
+  border-top: 5px solid #0287D0; }
+  .card-team p {
+    margin-top: 20px;
+    margin-bottom: 32px; }
+  .card-team img {
+    margin: .5rem auto 2rem;
+    border: 3px solid white;
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 50%; }
 
 .slider {
   width: 100%;
