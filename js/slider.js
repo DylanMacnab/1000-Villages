@@ -21,7 +21,10 @@ function cycleSlides() {
   // hides all slides
   $slides.hide();
   // display current slide
-  $slide.css('display', 'inline-block');
+	$slide.show().fadeIn();
+
+  // Original solution:
+	//$slide.slideUp().css('display', 'inline-block');
 }
 
 // call click function when next button is clicked

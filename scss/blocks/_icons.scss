@@ -6,9 +6,11 @@
 
 .icon--circle {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   margin-right: 20px;
+  border: 2px solid white;
+  margin-left: -20px;
   @include mq(md) {
     margin-top: 18px;
   }

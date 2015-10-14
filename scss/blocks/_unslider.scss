@@ -7,6 +7,9 @@
   margin: 0 auto;
   position: relative;
   height: 100%;
+  p {
+    text-shadow: $shadow-text;
+  }
 }
 
 // Slide Containers
@@ -24,7 +27,7 @@
 
 // Slider Butons
 .next, .prev {
-  padding: 30px 20px;
+  padding: 30px 10px;
   display: block;
   position: absolute;
   top: 50%;
@@ -50,6 +53,7 @@
 // Slide Energy
 // ---------------------
 .slide-energy {
+  display: block;
   height: 100%;
   width: 100%;
   background:

@@ -384,13 +384,13 @@ h1, h2, h3, h4, h5, h6,
   color: inherit; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 42px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 35px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 21px; }
 
 h4, .h4 {
   font-size: 18px; }
@@ -1222,7 +1222,10 @@ textarea {
   font-size: 3.75rem; }
 
 .type-lg {
-  font-size: 1.25rem; }
+  font-size: 1.15rem; }
+  @media (min-width: 992px) {
+    .type-lg {
+      font-size: 1.3rem; } }
 
 .clearfix:after {
   content: "";
@@ -1268,7 +1271,7 @@ textarea {
       background-repeat: no-repeat; } }
   @media (min-width: 1200px) {
     .hero {
-      background: url("../img/hero-bg-pin.jpg");
+      background: url("../img/hero-bg-lg.jpg");
       background-position: bottom left;
       background-size: cover;
       background-repeat: no-repeat; } }
@@ -1356,7 +1359,7 @@ textarea {
   position: absolute;
   height: 90px;
   width: 90px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   border: 5px solid #0287D0;
   background: #0287D0;
@@ -1373,7 +1376,7 @@ textarea {
   width: 100%;
   height: 65px;
   background: #333333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 .topbar__brand {
   float: left;
@@ -1405,9 +1408,11 @@ textarea {
 
 .icon--circle {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  margin-right: 20px; }
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border: 2px solid white;
+  margin-left: -20px; }
   @media (min-width: 992px) {
     .icon--circle {
       margin-top: 18px; } }
@@ -1416,7 +1421,7 @@ textarea {
   background: #E0216A; }
 
 .icon--shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 .mission {
   color: white;
@@ -1438,14 +1443,14 @@ textarea {
 
 .mission__fact {
   font-size: 4rem;
-  color: #013552;
+  color: #01456b;
   font-family: 'bitter';
   font-weight: bold;
-  line-height: 1;
-  padding-top: 10px; }
+  line-height: 1; }
   @media (min-width: 992px) {
     .mission__fact {
-      font-size: 6rem; } }
+      font-size: 5rem;
+      padding-top: 10px; } }
   .mission__fact span {
     font-size: 1.3rem; }
     @media (min-width: 992px) {
@@ -1453,16 +1458,19 @@ textarea {
         font-size: 1.7rem; } }
 
 .mission__fact__description {
-  padding-left: 100px; }
+  padding-left: 55px; }
 
 .plan {
-  background: #eeeeee; }
+  background: #eeeeee;
+  color: #555555; }
 
 .slider {
   width: 100%;
   margin: 0 auto;
   position: relative;
   height: 100%; }
+  .slider p {
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); }
 
 .slide {
   min-height: 400px;
@@ -1476,7 +1484,7 @@ textarea {
       min-height: 600px; } }
 
 .next, .prev {
-  padding: 30px 20px;
+  padding: 30px 10px;
   display: block;
   position: absolute;
   top: 50%;
@@ -1499,6 +1507,7 @@ textarea {
   right: 0; }
 
 .slide-energy {
+  display: block;
   height: 100%;
   width: 100%;
   background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.3)), url("../img/slide-energy.jpg") center center;

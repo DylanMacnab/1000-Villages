@@ -54,5 +54,8 @@
 }
 
 .type-lg {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  @include mq(md) {
+    font-size: 1.3rem;
+  }
 }

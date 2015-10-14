@@ -37,13 +37,13 @@
 
 .mission__fact {
   font-size: 4rem;
-  color: $brand-darker;
+  color: lighten($brand-darker, 5%);
   font-family: 'bitter';
   font-weight: bold;
   line-height: 1;
-  padding-top: 10px;
   @include mq(md) {
-    font-size: 6rem;
+    font-size: 5rem;
+    padding-top: 10px;
   }
   // target span of number label
   span {
@@ -55,7 +55,7 @@
 }
 
 .mission__fact__description {
-  padding-left: 100px;
+  padding-left: 55px;
 }
 
 
@@ -64,4 +64,5 @@
 
 .plan {
   background: $gray-lighter;
+  color: $gray;
 }
