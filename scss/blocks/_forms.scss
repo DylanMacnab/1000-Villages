@@ -1,0 +1,41 @@
+// **************************************************
+// Name: _forms.scss
+// Description: form styles
+// **************************************************
+
+
+.form {
+  background: rgba(black, .3);
+  padding: 30px;
+}
+
+
+// Stashing some default styles here // fix later
+
+fieldset {
+	border: none;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+}
+
+textarea {
+  height: 152px;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
