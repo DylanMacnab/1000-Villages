@@ -6,7 +6,8 @@
 
 .form {
   background: rgba(black, .3);
-  padding: 30px;
+  padding: 40px 10px;
+  border-radius: 5px;
 }
 
 
@@ -26,6 +27,7 @@ input, textarea {
   border-radius: 5px;
   padding: 15px;
   text-align: left;
+  background: rgba(white, .9);
 }
 
 textarea {

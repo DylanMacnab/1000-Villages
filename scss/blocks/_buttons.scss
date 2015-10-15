@@ -15,6 +15,7 @@
   letter-spacing: .1rem;
   border-radius: 5px;
   transition: $transition-basic;
+  text-align: center;
   // remove default hover underline on anchor tags
   &:hover {
     text-decoration: none;
@@ -28,7 +29,11 @@
 
 .btn-lg {
   @extend %btn;
+  width: 100%;
   padding: 18px 45px;
+  @include mq(md) {
+    padding: 18px 45px;
+  }
 }
 
 .btn-sm {
