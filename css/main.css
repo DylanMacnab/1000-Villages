@@ -1298,8 +1298,8 @@ textarea {
   text-align: center;
   position: relative;
   opacity: 0;
-  -webkit-animation: fadeIn-scaleUp .5s 2.3s forwards ease-out;
-          animation: fadeIn-scaleUp .5s 2.3s forwards ease-out; }
+  -webkit-animation: fadeIn-scaleUp .3s 2.3s forwards ease-out;
+          animation: fadeIn-scaleUp .3s 2.3s forwards ease-out; }
   @media (min-width: 992px) {
     .quote {
       padding: 80px 120px 60px; } }
