@@ -1548,7 +1548,7 @@ textarea {
 
 .topbar__brand {
   float: left;
-  width: 120px;
+  width: 140px;
   height: 63px;
   background: url("../img/brand.svg") no-repeat left center;
   background-size: contain; }
