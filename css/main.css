@@ -1566,13 +1566,22 @@ textarea {
   letter-spacing: .1rem;
   margin-right: 30px;
   padding: 20px 5px;
-  color: #999999; }
+  color: #999999;
+  font-size: 14px; }
   .topbar__link:hover {
     color: #eeeeee;
     text-decoration: none; }
   @media (min-width: 992px) {
     .topbar__link {
       display: inline; } }
+
+.main-footer {
+  width: 100%;
+  height: 65px;
+  background: #2e2e2e;
+  color: #666666;
+  padding-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 .icon--circle {
   border-radius: 50%;
@@ -1657,6 +1666,7 @@ fieldset {
   width: 100%; }
 
 input, textarea {
+  color: #2e2e2e;
   width: 100%;
   border: 0;
   border-radius: 5px;
@@ -1685,6 +1695,12 @@ label {
   margin-bottom: 2rem;
   max-height: 600px;
   border-top: 5px solid #0287D0; }
+  .card-team a {
+    padding-left: 30px;
+    background: url("../img/mail-icon.svg") no-repeat left 48%;
+    background-size: 22px auto;
+    -webkit-transition: .3s;
+            transition: .3s; }
   .card-team p {
     margin-top: 20px;
     margin-bottom: 32px; }
@@ -1711,6 +1727,8 @@ label {
   height: 100%;
   display: none;
   text-align: center; }
+  .slide p:last-of-type {
+    margin-bottom: 30px; }
   @media (min-width: 992px) {
     .slide {
       min-height: 600px; } }
@@ -1864,7 +1882,8 @@ label {
       padding: 18px 45px; } }
 
 .btn-sm {
-  padding: 9px 20px; }
+  padding: 9px 20px;
+  font-size: 14px; }
 
 .btn-primary {
   background: #0287D0;
@@ -1893,3 +1912,10 @@ label {
   .btn-alt-accent:hover {
     background: #E0216A;
     color: white; }
+
+.btn-alt-white {
+  border: 1px solid white;
+  color: white; }
+  .btn-alt-white:hover {
+    background: white;
+    color: #0287D0; }

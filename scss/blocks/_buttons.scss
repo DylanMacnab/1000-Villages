@@ -39,6 +39,7 @@
 .btn-sm {
   @extend %btn;
   padding: 9px 20px;
+  font-size: 14px;
 }
 
 
@@ -85,5 +86,15 @@
   &:hover {
     background: $accent-primary;
     color: white;
+  }
+}
+
+// white color
+.btn-alt-white {
+  border: 1px solid white;
+  color: white;
+  &:hover {
+    background: white;
+    color: $brand-primary;
   }
 }

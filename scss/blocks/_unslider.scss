@@ -20,6 +20,9 @@
   height: 100%;
   display: none;
   text-align: center;
+  p:last-of-type {
+    margin-bottom: 30px;
+  }
   @include mq(md) {
     min-height: 600px;
   }

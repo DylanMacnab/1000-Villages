@@ -18,6 +18,12 @@
   margin-bottom: 2rem;
   max-height: 600px;
   border-top: 5px solid $brand-primary;
+  a {
+    padding-left: 30px;
+    background: url('../img/mail-icon.svg') no-repeat left 48%;
+    background-size: 22px auto;
+    transition: .3s;
+  }
   p {
     margin-top: 20px;
     margin-bottom: 32px;
