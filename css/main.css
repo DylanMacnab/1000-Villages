@@ -1274,7 +1274,8 @@ textarea {
   background: url("../img/hero-bg-sm.jpg");
   background-size: cover;
   background-position: bottom center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
   @media (min-width: 992px) {
     .hero {
       background: url("../img/hero-bg-md.jpg");
@@ -1291,11 +1292,14 @@ textarea {
 .quote {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 10vw;
-  padding: 60px 30px;
+  padding: 40px 30px;
   color: white;
   border-radius: 7px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  -webkit-animation: fadeIn-scaleUp .5s 2.3s forwards ease-out;
+          animation: fadeIn-scaleUp .5s 2.3s forwards ease-out; }
   @media (min-width: 992px) {
     .quote {
       padding: 80px 120px 60px; } }
@@ -1384,10 +1388,162 @@ textarea {
       bottom: -85px;
       right: 20px; } }
 
+@-webkit-keyframes fadeIn-scaleUp {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@keyframes fadeIn-scaleUp {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+.pin {
+  background: url("../img/map-pin.svg");
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  opacity: 0;
+  -webkit-animation: pin-drop .5s 1s forwards ease-in;
+          animation: pin-drop .5s 1s forwards ease-in; }
+  @media (min-width: 768px) {
+    .pin {
+      bottom: 10%;
+      left: 15%; } }
+  @media (min-width: 992px) {
+    .pin {
+      bottom: 30%;
+      left: 15%; } }
+  @media (min-width: 1200px) {
+    .pin {
+      bottom: 30%;
+      left: 20%; } }
+  @media (min-width: 1600px) {
+    .pin {
+      bottom: 35%;
+      left: 20%; } }
+
+.pin-label {
+  display: none; }
+  @media (min-width: 992px) {
+    .pin-label {
+      display: block;
+      position: relative;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border-radius: 5px;
+      min-width: 150px;
+      text-align: center;
+      opacity: 0;
+      left: calc(50% - 7px);
+      -webkit-transform: translate(-50%, -90px);
+          -ms-transform: translate(-50%, -90px);
+              transform: translate(-50%, -90px);
+      -webkit-animation: slideUp-fadeIn-scaleUp .4s 1.5s forwards ease-out, label-hover 1.5s 1.9s infinite ease-in-out;
+              animation: slideUp-fadeIn-scaleUp .4s 1.5s forwards ease-out, label-hover 1.5s 1.9s infinite ease-in-out; } }
+  .pin-label:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.6); }
+  .pin-label p {
+    padding: 20px; }
+
+@-webkit-keyframes label-hover {
+  0% {
+    -webkit-transform: translate(-50%, -90px);
+            transform: translate(-50%, -90px); }
+  50% {
+    -webkit-transform: translate(-50%, -85px);
+            transform: translate(-50%, -85px); }
+  100% {
+    -webkit-transform: translate(-50%, -90px);
+            transform: translate(-50%, -90px); } }
+
+@keyframes label-hover {
+  0% {
+    -webkit-transform: translate(-50%, -90px);
+            transform: translate(-50%, -90px); }
+  50% {
+    -webkit-transform: translate(-50%, -85px);
+            transform: translate(-50%, -85px); }
+  100% {
+    -webkit-transform: translate(-50%, -90px);
+            transform: translate(-50%, -90px); } }
+@-webkit-keyframes slideUp-fadeIn-scaleUp {
+  0% {
+    -webkit-transform: translate(-50%, -60px) scale(0.8);
+            transform: translate(-50%, -60px) scale(0.8);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(-50%, -90px) scale(1);
+            transform: translate(-50%, -90px) scale(1);
+    opacity: 1; } }
+@keyframes slideUp-fadeIn-scaleUp {
+  0% {
+    -webkit-transform: translate(-50%, -60px) scale(0.8);
+            transform: translate(-50%, -60px) scale(0.8);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(-50%, -90px) scale(1);
+            transform: translate(-50%, -90px) scale(1);
+    opacity: 1; } }
+@-webkit-keyframes pin-drop {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0; }
+  80% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 1; }
+  90% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
+@keyframes pin-drop {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0; }
+  80% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 1; }
+  90% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
 .topbar {
   width: 100%;
   height: 65px;
-  background: #333333;
+  background: #2e2e2e;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 .topbar__brand {
@@ -1485,8 +1641,8 @@ textarea {
       background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.1)), url("../img/footer-bg-md.jpg") center 80%; } }
   @media (min-width: 1200px) {
     .contact {
-      background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.1)), url("../img/footer-bg-lg.jpg") center 70%;
-      background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.1)), url("../img/footer-bg-lg.jpg") center 70%; } }
+      background: -webkit-linear-gradient(#0287d0, rgba(2, 135, 208, 0.1)), url("../img/footer-bg-lg.jpg") center 80%;
+      background: linear-gradient(#0287d0, rgba(2, 135, 208, 0.1)), url("../img/footer-bg-lg.jpg") center 80%; } }
 
 .form {
   background: rgba(0, 0, 0, 0.3);
@@ -1724,9 +1880,16 @@ label {
     background: #e33779;
     color: white; }
 
-.btn-alt {
+.btn-alt-brand {
+  border: 1px solid #0287D0;
+  color: #eeeeee; }
+  .btn-alt-brand:hover {
+    background: #0287D0;
+    color: white; }
+
+.btn-alt-accent {
   border: 1px solid #E0216A;
   color: #eeeeee; }
-  .btn-alt:hover {
+  .btn-alt-accent:hover {
     background: #E0216A;
     color: white; }

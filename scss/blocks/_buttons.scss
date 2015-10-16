@@ -45,6 +45,7 @@
 // button look
 // --------------------------
 
+// primary action // brand color
 .btn-primary {
   background: $brand-primary;
   color: $gray-lighter;
@@ -54,6 +55,7 @@
   }
 }
 
+// primary action / accent color
 .btn-primary-accent {
   background: $accent-primary;
   color: $gray-lighter;
@@ -63,8 +65,21 @@
   }
 }
 
+// Secondary Action Buttons
+// ---------------------------------
 
-.btn-alt {
+// brand color
+.btn-alt-brand {
+  border: 1px solid $brand-primary;
+  color: $gray-lighter;
+  &:hover {
+    background: $brand-primary;
+    color: white;
+  }
+}
+
+// accent color
+.btn-alt-accent {
   border: 1px solid $accent-primary;
   color: $gray-lighter;
   &:hover {
